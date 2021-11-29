@@ -58,7 +58,7 @@
 	heat_level_3 = SYNTH_HEAT_LEVEL_3
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_MINOR_CUT
-	spawn_flags =   SPECIES_CAN_JOIN
+	spawn_flags =   SPECIES_IS_RESTRICTED
 
 	appearance_flags = HAS_EYE_COLOR
 	blood_color = "#2de00d"

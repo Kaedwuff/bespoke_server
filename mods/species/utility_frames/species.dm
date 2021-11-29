@@ -19,7 +19,7 @@
 	age_descriptor =        /datum/appearance_descriptor/age/utility_frame
 	hidden_from_codex =     FALSE
 	species_flags =         SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_POISON
-	spawn_flags =           SPECIES_CAN_JOIN
+	spawn_flags =           SPECIES_IS_RESTRICTED
 	appearance_flags =      HAS_SKIN_COLOR | HAS_EYE_COLOR
 	strength =              STR_HIGH
 	warning_low_pressure =  50

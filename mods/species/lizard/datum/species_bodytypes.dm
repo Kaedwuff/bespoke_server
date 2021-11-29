@@ -1,22 +1,15 @@
 /decl/bodytype/sintasi
-	name =                   "feminine"
+	name =                   "Sexually Non-Dymorphic"
 	bodytype_category =      BODYTYPE_HUMANOID
 	husk_icon =              'mods/species/lizard/icons/husk.dmi'
-	icon_base =              'mods/species/lizard/icons/body_female.dmi'
-	icon_deformed =          'mods/species/lizard/icons/deformed_body_female.dmi'
+	icon_base =              'mods/species/lizard/icons/body_male.dmi'
+	icon_deformed =          'mods/species/lizard/icons/deformed_body_male.dmi'
 	lip_icon =               'mods/species/lizard/icons/lips.dmi'
 	blood_overlays =         'icons/mob/human_races/species/human/blood_overlays.dmi'
 	bandages_icon =          'icons/mob/bandage.dmi'
 	limb_icon_intensity =    0.7
 	health_hud_intensity =   2
-	associated_gender =      FEMALE
-	uniform_state_modifier = "_f"
-
-/decl/bodytype/sintasi/masculine
-	name =                   "masculine"
-	icon_base =              'mods/species/lizard/icons/body_male.dmi'
-	icon_deformed =          'mods/species/lizard/icons/deformed_body_male.dmi'
-	associated_gender =      MALE
+	associated_gender =      PLURAL
 	uniform_state_modifier = null
 
 /obj/item/organ/external/tail/sintasi

@@ -18,7 +18,6 @@
 
 	available_bodytypes = list(
 		/decl/bodytype/sintasi,
-		/decl/bodytype/sintasi/masculine
 	)
 	unarmed_attacks = list(
 		/decl/natural_attack/stomp,
@@ -38,14 +37,15 @@
 	flash_mod = 1.2
 	blood_volume = 800
 
-	hunger_factor = DEFAULT_HUNGER_FACTOR * 2
+	hunger_factor = DEFAULT_HUNGER_FACTOR / 1.25
+	thirst_factor = DEFAULT_THIRST_FACTOR / 1.75
 
 	age_descriptor = /datum/appearance_descriptor/age/sintasi
 
 	body_temperature = null // cold-blooded, implemented the same way nabbers do it
 
 	description = "A heavily reptillian species. They prefer warmer temperatures than most species and \
-	their native tongue is a heavy hissing laungage."
+	their native tongue is a heavy hissing language."
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -62,7 +62,7 @@
 
 	reagent_tag = IS_SINTASI
 	base_color = "#066000"
-	blood_color = "#f24b2e"
+	blood_color = "#8f3c8b"
 	organs_icon = 'mods/species/lizard/icons/organs.dmi'
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw

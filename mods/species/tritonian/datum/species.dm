@@ -26,4 +26,5 @@
 		BP_LUNGS = /obj/item/organ/internal/lungs/gills
 	)
 
+	spawn_flags = SPECIES_IS_RESTRICTED
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_TRITON | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
