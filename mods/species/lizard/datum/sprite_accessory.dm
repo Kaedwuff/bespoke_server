@@ -1,94 +1,94 @@
-/decl/sprite_accessory/hair/lizard
-	name = "Lizard Horns"
+/decl/sprite_accessory/hair/sintasi
+	name = "Sintasi Horns"
 	icon = 'mods/species/lizard/icons/hair.dmi'
 	icon_state = "horns"
-	species_allowed = list(SPECIES_LIZARD)
+	species_allowed = list(SPECIES_SINTASI)
 	blend = ICON_MULTIPLY
 	flags = VERY_SHORT
 
-/decl/sprite_accessory/hair/lizard/hood
-	name = "Lizard Cobra Hood"
+/decl/sprite_accessory/hair/sintasi/hood
+	name = "Sintasi Cobra Hood"
 	icon_state = "cobrahood"
 
-/decl/sprite_accessory/hair/lizard/spines_long
-	name = "Lizard Spines Long"
+/decl/sprite_accessory/hair/sintasi/spines_long
+	name = "Sintasi Spines Long"
 	icon_state = "spines_long"
 
-/decl/sprite_accessory/hair/lizard/spines_short
-	name = "Lizard Spines Short"
+/decl/sprite_accessory/hair/sintasi/spines_short
+	name = "Sintasi Spines Short"
 	icon_state = "spines_short"
 
-/decl/sprite_accessory/hair/lizard/frills_aqua
-	name = "Lizard Frills Aqua"
+/decl/sprite_accessory/hair/sintasi/frills_aqua
+	name = "Sintasi Frills Aqua"
 	icon_state = "frills_aqua"
 
-/decl/sprite_accessory/hair/lizard/frills_long
-	name = "Lizard Frills Long"
+/decl/sprite_accessory/hair/sintasi/frills_long
+	name = "Sintasi Frills Long"
 	icon_state = "frills_long"
 
-/decl/sprite_accessory/hair/lizard/frills_short
-	name = "Lizard Frills Short"
+/decl/sprite_accessory/hair/sintasi/frills_short
+	name = "Sintasi Frills Short"
 	icon_state = "frills_short"
 
-/decl/sprite_accessory/hair/lizard/sidefrills
-	name = "Lizard Frills Side"
+/decl/sprite_accessory/hair/sintasi/sidefrills
+	name = "Sintasi Frills Side"
 	icon_state = "frills_side"
 
-/decl/sprite_accessory/hair/lizard/bighorns
-	name = "Lizard Horns Big"
+/decl/sprite_accessory/hair/sintasi/bighorns
+	name = "Sintasi Horns Big"
 	icon_state = "horns_big"
 
-/decl/sprite_accessory/hair/lizard/smallhorns
-	name = "Lizard Horns Small"
+/decl/sprite_accessory/hair/sintasi/smallhorns
+	name = "Sintasi Horns Small"
 	icon_state = "horns_small"
 
-/decl/sprite_accessory/hair/lizard/shorthorns
-	name = "Lizard Horns Short"
+/decl/sprite_accessory/hair/sintasi/shorthorns
+	name = "Sintasi Horns Short"
 	icon_state = "horns_short"
 
-/decl/sprite_accessory/hair/lizard/curledhorns
-	name = "Lizard Horns Curled"
+/decl/sprite_accessory/hair/sintasi/curledhorns
+	name = "Sintasi Horns Curled"
 	icon_state = "horns_curled"
 
-/decl/sprite_accessory/hair/lizard/ramhorns
-	name = "Lizard Horns Ram"
+/decl/sprite_accessory/hair/sintasi/ramhorns
+	name = "Sintasi Horns Ram"
 	icon_state = "horns_ram"
 
-/decl/sprite_accessory/hair/lizard/ramhornsthick
-	name = "Lizard Horns Ram Thick"
+/decl/sprite_accessory/hair/sintasi/ramhornsthick
+	name = "Sintasi Horns Ram Thick"
 	icon_state = "horns_ram_thick"
 
-/decl/sprite_accessory/hair/lizard/doublehorns
-	name = "Lizard Horns Double"
+/decl/sprite_accessory/hair/sintasi/doublehorns
+	name = "Sintasi Horns Double"
 	icon_state = "horns_double"
 
-/decl/sprite_accessory/hair/lizard/spinedfrillslong
-	name = "Lizard Spined Long Frills"
+/decl/sprite_accessory/hair/sintasi/spinedfrillslong
+	name = "Sintasi Spined Long Frills"
 	icon_state = "spined_long_frills"
 
-/decl/sprite_accessory/hair/lizard/spinedfrillsshort
-	name = "Lizard Spined Short Frills"
+/decl/sprite_accessory/hair/sintasi/spinedfrillsshort
+	name = "Sintasi Spined Short Frills"
 	icon_state = "spined_short_frills"
 
 // FACIAL
 
-/decl/sprite_accessory/facial_hair/lizard
-	name = "Lizard Horn Chin"
+/decl/sprite_accessory/facial_hair/sintasi
+	name = "Sintasi Horn Chin"
 	icon = 'mods/species/lizard/icons/facial_hair.dmi'
 	icon_state = "facial_chinhorns"
-	species_allowed = list(SPECIES_LIZARD)
+	species_allowed = list(SPECIES_SINTASI)
 	gender = NEUTER
 	blend = ICON_MULTIPLY
 
-/decl/sprite_accessory/facial_hair/lizard/hornadorns
-	name = "Lizard Horn Adorns"
+/decl/sprite_accessory/facial_hair/sintasi/hornadorns
+	name = "Sintasi Horn Adorns"
 	icon_state = "facial_hornadorns"
 
-/decl/sprite_accessory/facial_hair/lizard/spinespikes
-	name = "Lizard Spine Spikes"
+/decl/sprite_accessory/facial_hair/sintasi/spinespikes
+	name = "Sintasi Spine Spikes"
 	icon_state = "facial_spikes"
 
-/decl/sprite_accessory/facial_hair/lizard/dorsalfrill
-	name = "Lizard Frill Dorsal"
+/decl/sprite_accessory/facial_hair/sintasi/dorsalfrill
+	name = "Sintasi Frill Dorsal"
 	icon_state = "facial_dorsalfrill"
 

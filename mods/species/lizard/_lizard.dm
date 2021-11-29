@@ -1,9 +1,9 @@
-#define SPECIES_LIZARD  "Lizard"
-#define LANGUAGE_LIZARD "Lizard Language"
-#define IS_LIZARD       "lizard"
+#define SPECIES_SINTASI  "Sintasi"
+#define LANGUAGE_SINTASI "Sinta su'hana"
+#define IS_SINTASI       "sintasi"
 
-/decl/modpack/lizard
-	name = "Lizard"
+/decl/modpack/sintasi
+	name = "Sintasi"
 
-/mob/living/carbon/human/lizard/Initialize(mapload)
-	..(mapload, SPECIES_LIZARD)
+/mob/living/carbon/human/sintasi/Initialize(mapload)
+	..(mapload, SPECIES_SINTASI)

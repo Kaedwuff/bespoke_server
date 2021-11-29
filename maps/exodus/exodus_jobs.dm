@@ -76,7 +76,7 @@
 
 #define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hop, /datum/job/hos
 	species_to_job_blacklist = list(
-		/decl/species/lizard = list(
+		/decl/species/sintasi = list(
 			HUMAN_ONLY_JOBS
 		),
 		/decl/species/tajaran = list(

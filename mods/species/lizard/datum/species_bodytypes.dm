@@ -1,4 +1,4 @@
-/decl/bodytype/lizard
+/decl/bodytype/sintasi
 	name =                   "feminine"
 	bodytype_category =      BODYTYPE_HUMANOID
 	husk_icon =              'mods/species/lizard/icons/husk.dmi'
@@ -12,13 +12,13 @@
 	associated_gender =      FEMALE
 	uniform_state_modifier = "_f"
 
-/decl/bodytype/lizard/masculine
+/decl/bodytype/sintasi/masculine
 	name =                   "masculine"
 	icon_base =              'mods/species/lizard/icons/body_male.dmi'
 	icon_deformed =          'mods/species/lizard/icons/deformed_body_male.dmi'
 	associated_gender =      MALE
 	uniform_state_modifier = null
 
-/obj/item/organ/external/tail/lizard
+/obj/item/organ/external/tail/sintasi
 	tail_animation =         'mods/species/lizard/icons/tail.dmi'
 	tail =                   "sogtail"

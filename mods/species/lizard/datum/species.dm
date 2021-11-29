@@ -1,4 +1,4 @@
-/datum/appearance_descriptor/age/lizard
+/datum/appearance_descriptor/age/sintasi
 	standalone_value_descriptors = list(
 		"an infant" =       1,
 		"a toddler" =       3,
@@ -11,14 +11,14 @@
 		"elderly" =       260
 	)
 
-/decl/species/lizard
-	name = SPECIES_LIZARD
-	name_plural = SPECIES_LIZARD
-	skin_material = /decl/material/solid/skin/lizard
+/decl/species/sintasi
+	name = SPECIES_SINTASI
+	name_plural = SPECIES_SINTASI
+	skin_material = /decl/material/solid/skin/sintasi
 
 	available_bodytypes = list(
-		/decl/bodytype/lizard,
-		/decl/bodytype/lizard/masculine
+		/decl/bodytype/sintasi,
+		/decl/bodytype/sintasi/masculine
 	)
 	unarmed_attacks = list(
 		/decl/natural_attack/stomp,
@@ -40,7 +40,7 @@
 
 	hunger_factor = DEFAULT_HUNGER_FACTOR * 2
 
-	age_descriptor = /datum/appearance_descriptor/age/lizard
+	age_descriptor = /datum/appearance_descriptor/age/sintasi
 
 	body_temperature = null // cold-blooded, implemented the same way nabbers do it
 
@@ -60,7 +60,7 @@
 
 	flesh_color = "#34af10"
 
-	reagent_tag = IS_LIZARD
+	reagent_tag = IS_SINTASI
 	base_color = "#066000"
 	blood_color = "#f24b2e"
 	organs_icon = 'mods/species/lizard/icons/organs.dmi'
@@ -84,11 +84,11 @@
 	breathing_sound = 'mods/species/lizard/sound/lizard_breathing.ogg'
 
 	override_organ_types = list(
-		BP_EYES = /obj/item/organ/internal/eyes/lizard,
-		BP_BRAIN = /obj/item/organ/internal/brain/lizard
+		BP_EYES = /obj/item/organ/internal/eyes/sintasi,
+		BP_BRAIN = /obj/item/organ/internal/brain/sintasi
 	)
 
-	override_limb_types = list(BP_TAIL = /obj/item/organ/external/tail/lizard)
+	override_limb_types = list(BP_TAIL = /obj/item/organ/external/tail/sintasi)
 
 	appearance_descriptors = list(
 		/datum/appearance_descriptor/height = 1.25,
@@ -121,12 +121,12 @@
 		/decl/emote/exertion/biological/pant
 	)
 
-/decl/species/lizard/Initialize()
+/decl/species/sintasi/Initialize()
 	. = ..()
 	LAZYINITLIST(available_cultural_info)
-	LAZYDISTINCTADD(available_cultural_info[TAG_CULTURE], /decl/cultural_info/culture/lizard)
-	LAZYSET(default_cultural_info, TAG_CULTURE, /decl/cultural_info/culture/lizard)
+	LAZYDISTINCTADD(available_cultural_info[TAG_CULTURE], /decl/cultural_info/culture/sintasi)
+	LAZYSET(default_cultural_info, TAG_CULTURE, /decl/cultural_info/culture/sintasi)
 
-/decl/species/lizard/equip_survival_gear(var/mob/living/carbon/human/H)
+/decl/species/sintasi/equip_survival_gear(var/mob/living/carbon/human/H)
 	..()
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H), slot_shoes_str)

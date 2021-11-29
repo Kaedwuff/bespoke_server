@@ -238,7 +238,7 @@
 	. += new/datum/stack_recipe/cloak(src)
 	. += new/datum/stack_recipe/shoes(src)
 
-/decl/material/solid/skin/lizard
+/decl/material/solid/skin/sintasi
 	name = "lizardskin"
 	uid = "solid_lizardskin"
 	color = "#626952"
