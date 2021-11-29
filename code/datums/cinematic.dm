@@ -16,7 +16,7 @@ var/global/datum/cinematic/cinematic = new
 	if(!override)
 		override = SSticker.mode
 	if(!override)
-		override = gamemode_cache["extended"]
+		override = gamemode_cache["story"]
 	if(!override)
 		return
 

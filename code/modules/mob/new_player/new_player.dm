@@ -64,12 +64,6 @@
 			stat("Game Mode:", "[SSticker.mode ? SSticker.mode.name : SSticker.master_mode] ([SSticker.master_mode])")
 		else
 			stat("Game Mode:", PUBLIC_GAME_MODE)
-		var/list/additional_antag_ids = list()
-		for(var/antag_type in global.additional_antag_types)
-			var/decl/special_role/antag = GET_DECL(antag_type)
-			additional_antag_ids |= lowertext(antag.name)
-		var/extra_antags = list2params(additional_antag_ids)
-		stat("Added Antagonists:", extra_antags ? extra_antags : "None")
 
 		if(GAME_STATE <= RUNLEVEL_LOBBY)
 			stat("Time To Start:", "[round(SSticker.pregame_timeleft/10)][SSticker.round_progressing ? "" : " (DELAYED)"]")

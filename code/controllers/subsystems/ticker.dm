@@ -6,12 +6,12 @@ SUBSYSTEM_DEF(ticker)
 	flags = SS_NO_TICK_CHECK | SS_KEEP_TIMING
 	runlevels = RUNLEVEL_LOBBY | RUNLEVELS_DEFAULT
 
-	var/pregame_timeleft = 3 MINUTES
+	var/pregame_timeleft = 1 MINUTES
 	var/start_ASAP = FALSE          //the game will start as soon as possible, bypassing all pre-game nonsense
 	var/list/gamemode_vote_results  //Will be a list, in order of preference, of form list(config_tag = number of votes).
 	var/bypass_gamemode_vote = 0    //Intended for use with admin tools. Will avoid voting and ignore any results.
 
-	var/master_mode = "extended"    //The underlying game mode (so "secret" or the voted mode). Saved to default back to previous round's mode in case the vote failed. This is a config_tag.
+	var/master_mode = "story"    //The underlying game mode (so "secret" or the voted mode). Saved to default back to previous round's mode in case the vote failed. This is a config_tag.
 	var/datum/game_mode/mode        //The actual gamemode, if selected.
 	var/round_progressing = 1       //Whether the lobby clock is ticking down.
 
@@ -52,10 +52,6 @@ SUBSYSTEM_DEF(ticker)
 	if(pregame_timeleft <= 0)
 		Master.SetRunLevel(RUNLEVEL_SETUP)
 		return
-
-	if(!bypass_gamemode_vote && (pregame_timeleft <= config.vote_autogamemode_timeleft SECONDS) && !gamemode_vote_results)
-		if(!SSvote.active_vote)
-			SSvote.initiate_vote(/datum/vote/gamemode, automatic = 1)
 
 /datum/controller/subsystem/ticker/proc/setup_tick()
 	switch(choose_gamemode())
@@ -216,7 +212,7 @@ Helpers
 			mode_to_try = gamemode_vote_results[1]
 			. = CHOOSE_GAMEMODE_RETRY //Worth it to try again at least once.
 		else
-			mode_to_try = "extended"
+			mode_to_try = "story"
 
 	if(!mode_to_try)
 		return
