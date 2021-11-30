@@ -8,6 +8,7 @@
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_NORMAL | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
 	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair)
+	valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-")
 
 	available_bodytypes = list(
 		/decl/bodytype/human,

@@ -33,7 +33,8 @@
 	base_eye_color = "#00aa00"
 	default_h_style = /decl/sprite_accessory/hair/taj
 
-	blood_color = "#862a51"
+	valid_bloodtypes = list("M+", "M-", "R+", "R-", "Mr+", "Mr-", "Ot+", "Ot-")
+	blood_color = "#816ad3"
 	organs_icon = 'mods/species/tajaran/icons/organs.dmi'
 
 	darksight_range = 7

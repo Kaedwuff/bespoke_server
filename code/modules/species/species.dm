@@ -19,6 +19,7 @@ var/global/const/DEFAULT_SPECIES_HEALTH = 200
 	var/list/available_bodytypes = list()
 	var/decl/bodytype/default_bodytype
 
+	var/list/valid_bloodtypes = list()
 	var/blood_color = COLOR_BLOOD_HUMAN       // Red.
 	var/flesh_color = "#ffc896"             // Pink.
 	var/blood_oxy = 1

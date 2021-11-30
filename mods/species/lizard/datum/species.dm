@@ -61,6 +61,7 @@
 	flesh_color = "#34af10"
 
 	reagent_tag = IS_SINTASI
+	valid_bloodtypes = list("S+", "S-", "X+", "X-", "SX+", "SX-", "Or+", "Or-")
 	base_color = "#066000"
 	blood_color = "#8f3c8b"
 	organs_icon = 'mods/species/lizard/icons/organs.dmi'
