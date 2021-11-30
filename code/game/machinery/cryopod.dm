@@ -612,3 +612,21 @@
 
 /obj/machinery/cryopod/proc/on_mob_spawn()
 	playsound(src, 'sound/machines/ding.ogg', 30, 1)
+
+/obj/machinery/cryopod/lifepod/hovertram
+	name = "hover tram"
+	desc = "A transport pod that is ready to take someone away from this place. Only the most lazy or cowardly would use such a device to escape hardship!"
+	on_store_name = "Departures Announcer"
+	on_store_message = "has departed the settlement."
+	on_enter_occupant_message = "You board the hovertram, and feel a small pang of regret that you may be leaving this life behind."
+	time_till_despawn = 15 SECONDS
+	icon_state = "hovertram"
+	base_icon_state = "hovertram"
+	occupied_icon_state = "hovertramocc"
+
+/obj/machinery/cryopod/lifepod/hovertram/Initialize()
+	. = ..()
+	airtank = new()
+	airtank.temperature = T20C
+	airtank.adjust_gas(/decl/material/gas/oxygen, MOLES_O2STANDARD, 0)
+	airtank.adjust_gas(/decl/material/gas/nitrogen, MOLES_N2STANDARD)
