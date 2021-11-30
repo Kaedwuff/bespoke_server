@@ -33,7 +33,7 @@
 	base_eye_color = "#00aa00"
 	default_h_style = /decl/sprite_accessory/hair/taj
 
-	valid_bloodtypes = list("M+", "M-", "R+", "R-", "Mr+", "Mr-", "Ot+", "Ot-")
+	valid_bloodtypes = list("M+", "M-", "R+", "R-", "MR+", "MR-", "Ot+", "Ot-")
 	blood_color = "#816ad3"
 	organs_icon = 'mods/species/tajaran/icons/organs.dmi'
 

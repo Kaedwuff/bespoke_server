@@ -872,3 +872,42 @@ var/global/const/DEFAULT_SPECIES_HEALTH = 200
 			preview_icon_path = "species_preview_[ckey(name)].png"
 
 	return preview_icon
+
+/decl/species/proc/is_blood_incompatible(my_blood_type, donor_blood_type)
+	var/donor_antigen = copytext(donor_blood_type,1,length(donor_blood_type))
+	var/receiver_antigen = copytext(my_blood_type,1,length(my_blood_type))
+	var/donor_rh = (findtext(donor_blood_type,"+")>0)
+	var/receiver_rh = (findtext(my_blood_type,"+")>0)
+
+	if(donor_rh && !receiver_rh) return TRUE
+	return check_antigens(donor_antigen, receiver_antigen)
+
+decl/species/proc/check_antigens(donor_antigen, receiver_antigen) 
+	return TRUE
+
+decl/species/human/check_antigens(donor_antigen, receiver_antigen) 
+	switch(receiver_antigen)
+		if("A")
+			if(donor_antigen != "A" && donor_antigen != "O") return TRUE
+		if("B")
+			if(donor_antigen != "B" && donor_antigen != "O") return TRUE
+		if("O")
+			if(donor_antigen != "O") return TRUE
+
+decl/species/sintasi/check_antigens(donor_antigen, receiver_antigen) 
+	switch(receiver_antigen)
+		if("S")
+			if(donor_antigen != "S" && donor_antigen != "O") return TRUE
+		if("X")
+			if(donor_antigen != "X" && donor_antigen != "O") return TRUE
+		if("O")
+			if(donor_antigen != "O") return TRUE
+
+decl/species/tajaran/check_antigens(donor_antigen, receiver_antigen) 
+	switch(receiver_antigen)
+		if("M")
+			if(donor_antigen != "M" && donor_antigen != "O") return TRUE
+		if("R")
+			if(donor_antigen != "R" && donor_antigen != "O") return TRUE
+		if("O")
+			if(donor_antigen != "O") return TRUE

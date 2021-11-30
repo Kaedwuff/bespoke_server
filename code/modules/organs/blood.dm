@@ -178,26 +178,14 @@
 		adjust_blood(amount, injected_data)
 	..()
 
-/mob/living/carbon/human/proc/blood_incompatible(blood_type, blood_species)
-	if(blood_species && species.name)
-		if(blood_species != species.name)
-			return 1
-
-	var/donor_antigen = copytext(blood_type, 1, length(blood_type))
-	var/receiver_antigen = copytext(dna.b_type, 1, length(dna.b_type))
-	var/donor_rh = (findtext(blood_type, "+") > 0)
-	var/receiver_rh = (findtext(dna.b_type, "+") > 0)
-
-	if(donor_rh && !receiver_rh) return 1
-	switch(receiver_antigen)
-		if("A")
-			if(donor_antigen != "A" && donor_antigen != "O") return 1
-		if("B")
-			if(donor_antigen != "B" && donor_antigen != "O") return 1
-		if("O")
-			if(donor_antigen != "O") return 1
-		//AB is a universal receiver.
-	return 0
+/proc/blood_incompatible(donor,receiver,donor_species,receiver_species)
+	if(!donor || !receiver) 
+		return FALSE
+	if(donor_species && receiver_species)
+		if(donor_species != receiver_species)
+			return TRUE
+	var/decl/species/species = get_species_by_key(donor, receiver)
+	return species.is_blood_incompatible(donor_species)
 
 /mob/living/carbon/human/proc/regenerate_blood(var/amount)
 	amount *= (species.blood_volume / SPECIES_BLOOD_DEFAULT)
