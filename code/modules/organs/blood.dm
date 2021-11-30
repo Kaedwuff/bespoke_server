@@ -178,14 +178,10 @@
 		adjust_blood(amount, injected_data)
 	..()
 
-/proc/blood_incompatible(donor,receiver,donor_species,receiver_species)
-	if(!donor || !receiver) 
-		return FALSE
-	if(donor_species && receiver_species)
-		if(donor_species != receiver_species)
-			return TRUE
-	var/decl/species/species = get_species_by_key(donor, receiver)
-	return species.is_blood_incompatible(donor_species)
+/mob/living/carbon/human/proc/blood_incompatible(var/blood_type, var/blood_species)
+	if(blood_species && blood_species != species.name)
+		return TRUE
+	return species.is_blood_incompatible(dna.b_type, blood_type)
 
 /mob/living/carbon/human/proc/regenerate_blood(var/amount)
 	amount *= (species.blood_volume / SPECIES_BLOOD_DEFAULT)
