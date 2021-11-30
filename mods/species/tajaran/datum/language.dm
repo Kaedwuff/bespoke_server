@@ -1,6 +1,6 @@
-/decl/language/tajaran
+/decl/language/amowren
 	name = LANGUAGE_TAJARA
-	desc = "The traditionally employed tongue of Ahdomai, composed of expressive yowls and chirps. Native to the Tajaran."
+	desc = "The traditionally employed tongue of Unnamed Cat Planet, composed of expressive yowls and chirps. Native to the Amowren."
 	speech_verb = "purrs"
 	ask_verb = "purrs"
 	exclaim_verb = "howls"
@@ -13,7 +13,7 @@
 	"ka","aasi","far","wa","baq","ara","qara","zir","sam","mak","hrar","nja","rir","khan","jun","dar","rik","kah",
 	"hal","ket","jurl","mah","tul","cresh","azu","ragh","mro","mra","mrro","mrra")
 
-/decl/language/tajaran/get_random_name(var/gender, name_count=2, syllable_count=4, syllable_divisor=2)
+/decl/language/amowren/get_random_name(var/gender, name_count=2, syllable_count=4, syllable_divisor=2)
 	var/new_name = ..(gender,1)
 	if(prob(70))
 		new_name += " [pick(list("Hadii","Kaytam","Nazkiin","Zhan-Khazan","Hharar","Njarir'Akhan","Faaira'Nrezi","Rhezar","Mi'dynh","Rrhazkal","Bayan","Al'Manq","Mi'jri","Chur'eech","Sanu'dra","Ii'rka"))]"
@@ -23,8 +23,8 @@
 
 //#803b56 is color
 
-/decl/language/tajaran/format_message(message, verb)
+/decl/language/amowren/format_message(message, verb)
 	return "[verb], <span class='message'><span style='color: #803b56'>\"[capitalize(message)]\"</span></span>"
 
-/decl/language/tajaran/format_message_radio(message, verb)
+/decl/language/amowren/format_message_radio(message, verb)
 	return "[verb], <span style='color: #803b56'>\"[capitalize(message)]\"</span>"

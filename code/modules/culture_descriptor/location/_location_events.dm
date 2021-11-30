@@ -121,7 +121,7 @@
 		[pick("playwright","author","director","actor","TV star")] [random_name(pick(MALE,FEMALE))] comes the latest sensation: '\
 		[pick("Deadly","The last","Lost","Dead")] [pick("Starships","Warriors","outcasts")] \
 		[pick("of","from","raid","go hunting on","visit","ravage","pillage","destroy")] \
-		[pick("Moghes","Earth","Biesel","Ahdomai","S'randarr","the Void","the Edge of Space")]'.\
+		[pick("Moghes","Earth","Biesel","Unnamed Cat Planet","S'randarr","the Void","the Edge of Space")]'.\
 		. Own it on webcast today, or visit the galactic premier on [location.name]!"
 
 /decl/location_event/gossip/announce(var/decl/cultural_info/location)

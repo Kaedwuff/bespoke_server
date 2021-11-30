@@ -79,7 +79,7 @@
 		/decl/species/sintasi = list(
 			HUMAN_ONLY_JOBS
 		),
-		/decl/species/tajaran = list(
+		/decl/species/amowren = list(
 			HUMAN_ONLY_JOBS
 		)
 	)

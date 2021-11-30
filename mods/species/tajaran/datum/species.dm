@@ -1,4 +1,4 @@
-/datum/appearance_descriptor/age/tajaran
+/datum/appearance_descriptor/age/amowren
 	standalone_value_descriptors = list(
 		"an infant" =       1,
 		"a toddler" =       3,
@@ -11,14 +11,14 @@
 		"elderly" =       140
 	)
 
-/decl/species/tajaran
-	name = SPECIES_TAJARA
-	name_plural = "Tajaran"
+/decl/species/amowren
+	name = SPECIES_AMOWREN
+	name_plural = "Amowren"
 
-	description = "A small mammalian carnivore. If you are reading this, you are probably a Tajaran."
+	description = "A small mammalian carnivore. If you are reading this, you are probably a Amowren."
 	hidden_from_codex = FALSE
 
-	age_descriptor = /datum/appearance_descriptor/age/tajaran
+	age_descriptor = /datum/appearance_descriptor/age/amowren
 
 	available_bodytypes = list(/decl/bodytype/feline)
 
@@ -27,7 +27,7 @@
 
 
 	flesh_color = "#afa59e"
-	base_markings = list(/decl/sprite_accessory/marking/tajaran = "#888888")
+	base_markings = list(/decl/sprite_accessory/marking/amowren = "#888888")
 	base_hair_color = "#515151"
 	base_color = "#787878"
 	base_eye_color = "#00aa00"
@@ -72,7 +72,7 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			/decl/cultural_info/culture/tajaran,
+			/decl/cultural_info/culture/amowren,
 			/decl/cultural_info/culture/other
 		)
 	)
@@ -114,5 +114,5 @@
 	eye_blend = ICON_MULTIPLY
 	eye_icon = 'mods/species/tajaran/icons/eyes.dmi'
 
-/decl/species/tajaran/handle_additional_hair_loss(var/mob/living/carbon/human/H, var/defer_body_update = TRUE)
+/decl/species/amowren/handle_additional_hair_loss(var/mob/living/carbon/human/H, var/defer_body_update = TRUE)
 	. = H && H.change_skin_color(189, 171, 143)

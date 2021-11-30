@@ -903,7 +903,7 @@ var/global/const/DEFAULT_SPECIES_HEALTH = 200
 		if("O")
 			if(donor_antigen != "O") return TRUE
 
-/decl/species/tajaran/check_antigens(donor_antigen, receiver_antigen) 
+/decl/species/amowren/check_antigens(donor_antigen, receiver_antigen) 
 	switch(receiver_antigen)
 		if("M")
 			if(donor_antigen != "M" && donor_antigen != "O") return TRUE

@@ -2,276 +2,276 @@
 
 /decl/sprite_accessory/facial_hair/shaved/Initialize()
 	. = ..()
-	species_allowed |= SPECIES_TAJARA
+	species_allowed |= SPECIES_AMOWREN
 
 /decl/sprite_accessory/hair/shaved/Initialize()
 	. = ..()
-	species_allowed |= SPECIES_TAJARA
+	species_allowed |= SPECIES_AMOWREN
 
 /decl/sprite_accessory/hair/taj
-	name = "Tajaran Rattail"
+	name = "Amowren Rattail"
 	icon_state = "hair_rattail"
-	species_allowed = list(SPECIES_TAJARA)
+	species_allowed = list(SPECIES_AMOWREN)
 	icon = 'mods/species/tajaran/icons/hair.dmi'
 	blend = ICON_MULTIPLY
 
 /decl/sprite_accessory/hair/taj/straight
-	name = "Tajaran Straight Hair"
+	name = "Amowren Straight Hair"
 	icon_state = "hair_straight"
 
 /decl/sprite_accessory/hair/taj/clean
-	name = "Tajaran Clean"
+	name = "Amowren Clean"
 	icon_state = "hair_clean"
 
 /decl/sprite_accessory/hair/taj/shaggy
-	name = "Tajaran Shaggy"
+	name = "Amowren Shaggy"
 	icon_state = "hair_shaggy"
 
 /decl/sprite_accessory/hair/taj/mohawk
-	name = "Tajaran Mohawk"
+	name = "Amowren Mohawk"
 	icon_state = "hair_mohawk"
 
 /decl/sprite_accessory/hair/taj/plait
-	name = "Tajaran Plait"
+	name = "Amowren Plait"
 	icon_state = "hair_plait"
 
 /decl/sprite_accessory/hair/taj/long
-	name = "Tajaran Long Hair"
+	name = "Amowren Long Hair"
 	icon_state = "hair_long"
 
 /decl/sprite_accessory/hair/taj/spiky
-	name = "Tajaran Spiky"
+	name = "Amowren Spiky"
 	icon_state = "hair_tajspiky"
 
 /decl/sprite_accessory/hair/taj/bangs
-	name = "Tajaran Bangs"
+	name = "Amowren Bangs"
 	icon_state = "hair_bangs"
 
 /decl/sprite_accessory/hair/taj/messy
-	name = "Tajaran Messy"
+	name = "Amowren Messy"
 	icon_state = "hair_messy"
 
 /decl/sprite_accessory/hair/taj/braid
-	name = "Tajaran Braid"
+	name = "Amowren Braid"
 	icon_state = "hair_tbraid"
 
 /decl/sprite_accessory/hair/taj/bob
-	name = "Tajaran Bob"
+	name = "Amowren Bob"
 	icon_state = "hair_tbob"
 
 /decl/sprite_accessory/hair/taj/weave
-	name = "Tajaran Fingerweave"
+	name = "Amowren Fingerweave"
 	icon_state = "hair_fingerwave"
 
 /decl/sprite_accessory/hair/taj/sidebraid
-	name = "Tajaran Sidebraid"
+	name = "Amowren Sidebraid"
 	icon_state = "hair_sidebraid"
 
 /decl/sprite_accessory/hair/taj/ribbons
-	name = "Tajaran Ribbons"
+	name = "Amowren Ribbons"
 	icon_state = "hair_ribbons"
 
 /decl/sprite_accessory/hair/taj/combed
-	name = "Tajaran Combed"
+	name = "Amowren Combed"
 	icon_state = "hair_combedback"
 
 /decl/sprite_accessory/hair/taj/tailedbangs
-	name = "Tajaran Tailed Bangs"
+	name = "Amowren Tailed Bangs"
 	icon_state = "hair_tailedbangs"
 
 /decl/sprite_accessory/hair/taj/lynx
-	name = "Tajaran Lynx"
+	name = "Amowren Lynx"
 	icon_state = "hair_lynx"
 
 /decl/sprite_accessory/hair/taj/longtail
-	name = "Tajaran Long Tail"
+	name = "Amowren Long Tail"
 	icon_state = "hair_longtail"
 
 /decl/sprite_accessory/hair/taj/shy
-	name = "Tajaran Shy"
+	name = "Amowren Shy"
 	icon_state = "hair_shy"
 
 /decl/sprite_accessory/hair/taj/ponytail
-	name = "Tajaran Ponytail"
+	name = "Amowren Ponytail"
 	icon_state = "hair_ponytail"
 
 /decl/sprite_accessory/hair/taj/overeye
-	name = "Tajaran Overeye"
+	name = "Amowren Overeye"
 	icon_state = "hair_overeye"
 
 /decl/sprite_accessory/hair/taj/tough
-	name = "Tajaran Tough"
+	name = "Amowren Tough"
 	icon_state = "hair_tough"
 
 /decl/sprite_accessory/hair/taj/cuttail
-	name = "Tajaran Cut Tail"
+	name = "Amowren Cut Tail"
 	icon_state = "hair_cuttail"
 
 /decl/sprite_accessory/hair/taj/dreadlocks
-	name = "Tajaran Dreadlocks"
+	name = "Amowren Dreadlocks"
 	icon_state = "hair_dreadlocks"
 
 /decl/sprite_accessory/facial_hair/taj
-	name = "Tajaran Sideburns"
+	name = "Amowren Sideburns"
 	icon_state = "facial_sideburns"
-	species_allowed = list(SPECIES_TAJARA)
+	species_allowed = list(SPECIES_AMOWREN)
 	icon = 'mods/species/tajaran/icons/facial.dmi'
 	gender = null
 	blend = ICON_MULTIPLY
 
 /decl/sprite_accessory/facial_hair/taj/mutton
-	name = "Tajaran Mutton Chops"
+	name = "Amowren Mutton Chops"
 	icon_state = "facial_mutton"
 
 /decl/sprite_accessory/facial_hair/taj/pencilstache
-	name = "Tajaran Pencil Moustache"
+	name = "Amowren Pencil Moustache"
 	icon_state = "facial_pencilstache"
 
 /decl/sprite_accessory/facial_hair/taj/moustache
-	name = "Tajaran Moustache"
+	name = "Amowren Moustache"
 	icon_state = "facial_moustache"
 
 /decl/sprite_accessory/facial_hair/taj/goatee
-	name = "Tajaran Goatee"
+	name = "Amowren Goatee"
 	icon_state = "facial_goatee"
 
 /decl/sprite_accessory/facial_hair/taj/smallstache
-	name = "Tajaran Small Moustache"
+	name = "Amowren Small Moustache"
 	icon_state = "facial_smallstache"
 
-/decl/sprite_accessory/skin/tajaran
-	name = "Default Tajaran skin"
+/decl/sprite_accessory/skin/amowren
+	name = "Default Amowren skin"
 	icon_state = "default"
 	icon = 'mods/species/tajaran/icons/body.dmi'
-	species_allowed = list(SPECIES_TAJARA)
+	species_allowed = list(SPECIES_AMOWREN)
 
-/decl/sprite_accessory/marking/tajaran
-	name = "Tajaran Wide Ears"
+/decl/sprite_accessory/marking/amowren
+	name = "Amowren Wide Ears"
 	icon = 'mods/species/tajaran/icons/markings.dmi'
-	species_allowed = list(SPECIES_TAJARA)
+	species_allowed = list(SPECIES_AMOWREN)
 	body_parts = list(BP_HEAD)
 	icon_state = "ears_plain"
 	blend = ICON_MULTIPLY
 
-/decl/sprite_accessory/marking/tajaran/nose
-	name = "Tajaran Nose"
+/decl/sprite_accessory/marking/amowren/nose
+	name = "Amowren Nose"
 	icon_state = "nose"
 
-/decl/sprite_accessory/marking/tajaran/wide_ears_inner
-	name = "Tajaran Wide Ears Interior"
+/decl/sprite_accessory/marking/amowren/wide_ears_inner
+	name = "Amowren Wide Ears Interior"
 	icon_state = "ears_plain_inner"
 
-/decl/sprite_accessory/marking/tajaran/wide_ears_tuft
-	name = "Tajaran Wide Ears Tuft"
+/decl/sprite_accessory/marking/amowren/wide_ears_tuft
+	name = "Amowren Wide Ears Tuft"
 	icon_state = "ears_plain_tuft"
 
-/decl/sprite_accessory/marking/tajaran/narrow_ears
-	name = "Tajaran Narrow Ears"
+/decl/sprite_accessory/marking/amowren/narrow_ears
+	name = "Amowren Narrow Ears"
 	icon_state = "ears_narrow"
 
-/decl/sprite_accessory/marking/tajaran/narrow_ears_inner
-	name = "Tajaran Narrow Ears Interior"
+/decl/sprite_accessory/marking/amowren/narrow_ears_inner
+	name = "Amowren Narrow Ears Interior"
 	icon_state = "ears_narrow_inner"
 
-/decl/sprite_accessory/marking/tajaran/narrow_ears_tuft
-	name = "Tajaran Narrow Ears Tuft"
+/decl/sprite_accessory/marking/amowren/narrow_ears_tuft
+	name = "Amowren Narrow Ears Tuft"
 	icon_state = "ears_narrow_tuft"
 
-/decl/sprite_accessory/marking/tajaran/earrings
-	name = "Tajaran Earrings"
+/decl/sprite_accessory/marking/amowren/earrings
+	name = "Amowren Earrings"
 	icon_state = "taj_earrings"
 
-/decl/sprite_accessory/marking/tajaran/patches
+/decl/sprite_accessory/marking/amowren/patches
 	name = "Patches (Body)"
 	icon_state = "patches"
 	body_parts = list(BP_CHEST, BP_GROIN)
 	flags = HAIR_LOSS_VULNERABLE
 
-/decl/sprite_accessory/marking/tajaran/patches/left_arm
+/decl/sprite_accessory/marking/amowren/patches/left_arm
 	name = "Patches (Left Arm)"
 	body_parts = list(BP_L_ARM, BP_L_HAND)
 
-/decl/sprite_accessory/marking/tajaran/patches/right_arm
+/decl/sprite_accessory/marking/amowren/patches/right_arm
 	name = "Patches (Right Arm"
 	body_parts = list(BP_R_ARM, BP_R_HAND)
 
-/decl/sprite_accessory/marking/tajaran/patches/left_leg
+/decl/sprite_accessory/marking/amowren/patches/left_leg
 	name = "Patches (Left Leg)"
 	body_parts = list(BP_L_LEG, BP_L_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/patches/right_leg
+/decl/sprite_accessory/marking/amowren/patches/right_leg
 	name = "Patches (Right Leg)"
 	body_parts = list(BP_R_LEG, BP_R_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/tiger
+/decl/sprite_accessory/marking/amowren/tiger
 	name = "Tiger Stripes (Head)"
 	icon_state = "tiger"
 	flags = HAIR_LOSS_VULNERABLE
 
-/decl/sprite_accessory/marking/tajaran/tiger/body
+/decl/sprite_accessory/marking/amowren/tiger/body
 	name = "Tiger Stripes (Body)"
 	body_parts = list(BP_CHEST, BP_GROIN)
 
-/decl/sprite_accessory/marking/tajaran/tiger/left_arm
+/decl/sprite_accessory/marking/amowren/tiger/left_arm
 	name = "Tiger Stripes (Left Arm)"
 	body_parts = list(BP_L_ARM, BP_L_HAND)
 
-/decl/sprite_accessory/marking/tajaran/tiger/right_arm
+/decl/sprite_accessory/marking/amowren/tiger/right_arm
 	name = "Tiger Stripes (Right Arm)"
 	body_parts = list(BP_R_ARM, BP_R_HAND)
 
-/decl/sprite_accessory/marking/tajaran/tiger/left_leg
+/decl/sprite_accessory/marking/amowren/tiger/left_leg
 	name = "Tiger Stripes (Left Leg)"
 	body_parts = list(BP_L_LEG, BP_L_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/tiger/right_leg
+/decl/sprite_accessory/marking/amowren/tiger/right_leg
 	name = "Tiger Stripes (Right Leg)"
 	body_parts = list(BP_R_LEG, BP_R_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/spots
+/decl/sprite_accessory/marking/amowren/spots
 	name = "Spots (Head)"
 	icon_state = "spots"
 	flags = HAIR_LOSS_VULNERABLE
 
-/decl/sprite_accessory/marking/tajaran/spots/body
+/decl/sprite_accessory/marking/amowren/spots/body
 	name = "Spots (Body)"
 	body_parts = list(BP_CHEST, BP_GROIN)
 
-/decl/sprite_accessory/marking/tajaran/spots/left_arm
+/decl/sprite_accessory/marking/amowren/spots/left_arm
 	name = "Spots (Left Arm)"
 	body_parts = list(BP_L_ARM, BP_L_HAND)
 
-/decl/sprite_accessory/marking/tajaran/spots/right_arm
+/decl/sprite_accessory/marking/amowren/spots/right_arm
 	name = "Spots (Right Arm)"
 	body_parts = list(BP_R_ARM, BP_R_HAND)
 
-/decl/sprite_accessory/marking/tajaran/spots/left_leg
+/decl/sprite_accessory/marking/amowren/spots/left_leg
 	name = "Spots (Left Leg)"
 	body_parts = list(BP_L_LEG, BP_L_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/spots/right_leg
+/decl/sprite_accessory/marking/amowren/spots/right_leg
 	name = "Spots (Right Leg)"
 	body_parts = list(BP_R_LEG, BP_R_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/pawsocks
+/decl/sprite_accessory/marking/amowren/pawsocks
 	name = "Pawsocks (Left Arm)"
 	icon_state = "pawsocks"
 	body_parts = list(BP_L_ARM, BP_L_HAND)
 	flags = HAIR_LOSS_VULNERABLE
 
-/decl/sprite_accessory/marking/tajaran/pawsocks/right_arm
+/decl/sprite_accessory/marking/amowren/pawsocks/right_arm
 	name = "Pawsocks (Right Arm)"
 	body_parts = list(BP_R_ARM, BP_R_HAND)
 
-/decl/sprite_accessory/marking/tajaran/pawsocks/left_leg
+/decl/sprite_accessory/marking/amowren/pawsocks/left_leg
 	name = "Pawsocks (Left Leg)"
 	body_parts = list(BP_L_LEG, BP_L_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/pawsocks/right_leg
+/decl/sprite_accessory/marking/amowren/pawsocks/right_leg
 	name = "Pawsocks (Right Leg)"
 	body_parts = list(BP_R_LEG, BP_R_FOOT)
 
-/decl/sprite_accessory/marking/tajaran/belly
+/decl/sprite_accessory/marking/amowren/belly
 	name = "Belly"
 	icon_state = "belly"
 	body_parts = list(BP_CHEST, BP_GROIN)
