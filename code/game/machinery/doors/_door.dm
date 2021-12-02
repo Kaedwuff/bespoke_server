@@ -576,3 +576,37 @@
 	name = "close door"
 	desc = "Closes the door if possible."
 	call_proc = /obj/machinery/door/proc/close
+
+/obj/machinery/door/lockabledoor
+	name = "Sturdy Door"
+	desc = "A strong looking door, designed to block vision and access to spaces on the other side. This one has a visible lock and keyhole."
+	icon = 'icons/obj/doors/Doorint.dmi'
+	icon_state = "sturdydoor1"
+	hitsound = 'sound/weapons/tablehit1.ogg'
+	maxhealth = 200
+	min_force = 15
+	var/locked = 1
+	var/unlock_key = ""
+
+/obj/machinery/door/lockabledoor/proc/toggle_lock
+	if(locked)
+		locked = 0
+		to_chat(usr, "You unlock the door with your key.")
+	else
+		locked = 1
+		to_chat(usr, "You lock the door with your key.")
+
+/obj/machinery/door/lockabledoor/attackby(atom/key, mob/user)
+	if (istype(key, /obj/item/key/house))
+		if (multikey)
+			to_chat(user, "You fumble with [key], trying to find the right key.")
+			if (!do_after(aggressor, 5 SECONDS, src))
+				to_chat(user, "You lose track of where you were on [key]")
+				return
+		if(unlock_key in key_data)
+			toggle_lock(src)
+		else
+			if (multikey)
+				to_chat(user, "\The [key] does not contain a key for this lock.")
+			else
+				to_chat(user, "This is not the right key for this lock.")
