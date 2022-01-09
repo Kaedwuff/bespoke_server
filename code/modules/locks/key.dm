@@ -61,9 +61,22 @@
 	multikey = 1
 
 /obj/item/key/house/mayor_key/attack_self(var/mob/user)
-	to_chat(user, "You jingle the set of gilded keys, admiring how shiny they are. They make you feel more important."
+	/obj/item/machinery/keybox
 
-/obj/item/machinery/keybox
+/obj/machinery/keybox
 	name = "key box"
-	desc = "This box distributes the key for a house lot. This one has the number [lotnumber]"
+	desc = "This box distributes the key for a house lot. This one has the number [lotnumber] printed on it."
+	icon = 'icons/obj/items/keybox.dmi'
+	icon_state = "keybox"
 	var/lotnumber = null
+	var/empty = 0
+
+/obj/machinery/keybox/attack_hand(user)
+	if(empty)
+		to_chat(user, "This key has already been taken!")
+		return
+	else
+		var/obj/item/key/house/HK = new()
+		HK.key_data = lotnumber
+		user.put_in_hand(HK)
+		return
