@@ -61,7 +61,7 @@
 	multikey = 1
 
 /obj/item/key/house/mayor_key/attack_self(var/mob/user)
-	/obj/item/machinery/keybox
+	to_chat(user, "You jingle the set of gilded keys, admiring how shiny they are. They make you feel more important.")
 
 /obj/machinery/keybox
 	name = "key box"
