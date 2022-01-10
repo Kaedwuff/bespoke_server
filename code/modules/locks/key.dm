@@ -33,12 +33,17 @@
 
 /obj/item/key/house
 	name = "house key"
-	desc = "A small metal key that can be used to lock or unlock a specific door. This one has a tag that says #[key_data]."
-	icon = 'icons/obj/keys/housekeys.dmi'
+	desc = "A small metal key that can be used to lock or unlock a specific door."
+	icon = 'icons/obj/items/keys.dmi'
 	icon_state = "housekey"
 	drop_sound = 'sound/foley/singletooldrop1.ogg'
 	pickup_sound = 'sound/foley/singletooldrop2.ogg'
 	var/multikey = 0
+
+/obj/item/key/house/Initialize()
+	. = ..()
+	if(key_data)
+		desc += "This one has a tag that says #[key_data]"
 
 /obj/item/key/house/attack_self(var/mob/user)
 	to_chat(user, "This key opens a door somewhere. There is a tag affixed to the key that says #[key_data]")
@@ -46,7 +51,8 @@
 /obj/item/key/house/maint_ring
 	name = "ring of keys"
 	desc = "A ring of keys that will allow the holder to access any locks in the civilian area."
-	icon = 'icons/obj/keys/keyring.dmi'
+	icon = 'icons/obj/items/keys.dmi'
+	icon_state = "maintring"
 	key_data = list(ALL_CIV_ACCESS)
 	multikey = 1
 
@@ -56,27 +62,33 @@
 /obj/item/key/house/mayor_key
 	name = "keys to the city"
 	desc = "A mayor-exclusive set of gaudy keys that will unlock any door in the town. The mayor likes to feel important."
-	icon = 'icons/obj/keys/goldkeyring.dmi'
+	icon = 'icons/obj/items/keys.dmi'
+	icon_state = "goldring"
 	key_data = list(ALL_TOWN_ACCESS)
 	multikey = 1
 
 /obj/item/key/house/mayor_key/attack_self(var/mob/user)
 	to_chat(user, "You jingle the set of gilded keys, admiring how shiny they are. They make you feel more important.")
 
-/obj/machinery/keybox
+/obj/structure/keybox
 	name = "key box"
-	desc = "This box distributes the key for a house lot. This one has the number [lotnumber] printed on it."
-	icon = 'icons/obj/items/keybox.dmi'
+	desc = "This box distributes the key for a house lot."
+	icon = 'icons/obj/items/keys.dmi'
 	icon_state = "keybox"
 	var/lotnumber = null
 	var/empty = 0
 
-/obj/machinery/keybox/attack_hand(user)
+/obj/structure/keybox/Initialize()
+	. = ..()
+	if(lotnumber)
+		desc += " This one has the number [lotnumber] printed on it."
+
+/obj/structure/keybox/attack_hand(mob/user)
 	if(empty)
 		to_chat(user, "This key has already been taken!")
 		return
 	else
 		var/obj/item/key/house/HK = new()
 		HK.key_data = lotnumber
-		user.put_in_hand(HK)
+		user.put_in_hands(HK)
 		return

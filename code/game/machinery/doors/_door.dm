@@ -588,7 +588,7 @@
 	var/locked = 1
 	var/unlock_key = ""
 
-/obj/machinery/door/lockabledoor/proc/toggle_lock
+/obj/machinery/door/lockabledoor/proc/toggle_lock()
 	if(locked)
 		locked = 0
 		to_chat(usr, "You unlock the door with your key.")
@@ -596,11 +596,12 @@
 		locked = 1
 		to_chat(usr, "You lock the door with your key.")
 
-/obj/machinery/door/lockabledoor/attackby(atom/key, mob/user)
-	if (istype(key, /obj/item/key/house))
-		if (multikey)
+/obj/machinery/door/lockabledoor/attackby(atom/key, mob/user, var/multikey, var/key_data)
+	if (istype(key, /obj/item/key/))
+		var/obj/item/key/house/HK = key
+		if (HK.multikey)
 			to_chat(user, "You fumble with [key], trying to find the right key.")
-			if (!do_after(aggressor, 5 SECONDS, src))
+			if (!do_after(user, 5 SECONDS, src))
 				to_chat(user, "You lose track of where you were on [key]")
 				return
 		if(unlock_key in key_data)

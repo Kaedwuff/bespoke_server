@@ -58,12 +58,14 @@
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
-	flesh_color = "#34af10"
+	flesh_color = "#a7a152"
 
 	reagent_tag = IS_SINTASI
 	valid_bloodtypes = list("S+", "S-", "X+", "X-", "SX+", "SX-", "Or+", "Or-")
-	base_color = "#066000"
+	base_color = "#858330"
 	blood_color = "#8f3c8b"
+	base_hair_color = "#94842a"
+	base_eye_color == "#E2D822"
 	organs_icon = 'mods/species/lizard/icons/organs.dmi'
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
